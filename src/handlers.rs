@@ -25,6 +25,12 @@ async fn login(client: web::Data<Client>, id: Identity, info: web::Json<User>) -
     HttpResponse::Ok().finish()
 }
 
+#[post("/api/logout")]
+async fn logout(id: Identity) -> HttpResponse {
+    id.forget();
+    HttpResponse::Ok().finish()
+}
+
 #[post("/api/haste")]
 async fn create_haste(client: web::Data<Client>, id: Identity, info: web::Json<NewHaste>) -> HttpResponse {
     if id.identity().is_none() {

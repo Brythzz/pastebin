@@ -115,6 +115,26 @@ button:hover {
     text-align: right;
 }
 
+#logout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #37393b;
+    border-radius: 0 0 0 1rem;
+    cursor: pointer;
+    transition: background .4s ease;
+}
+
+#logout:hover {
+    background: #e64b4b;
+}
+
+#logout svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem;
+}
+
 @keyframes shake {
     25%, 75% {
         transform: translateX(-1rem);

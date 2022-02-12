@@ -33,6 +33,7 @@ async fn main() -> std::io::Result<()> {
             .service(get_haste)
             .service(get_user)
             .service(login)
+            .service(logout)
             .service(
                 Files::new("/", "public")
                 .show_files_listing()

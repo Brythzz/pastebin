@@ -96,13 +96,19 @@ const login = async (event) => {
     }
 }
 
+const logout = async () => {
+    const res = await fetch('/api/logout', { method: 'POST' });
+    if (res.status === 200) location.reload();
+}
+
 const showLogin = () => {
     document.body.innerHTML = '<form><input type="text" id="username" placeholder="Username" autocomplete="username"/><input type="password" id="password" placeholder="Password" autocomplete="current-password"/><button type="submit">Login</button><span id="err"></span></form>'
     document.querySelector('form').addEventListener('submit', login);
 };
 
 const showEditor = () => {
-    document.body.innerHTML = '<div id="lines">&gt;</div><textarea spellcheck="false" id="box"></textarea>';
+    document.body.innerHTML = '<div id="lines">&gt;</div><textarea spellcheck="false" id="box"></textarea><div id="logout"><svg viewBox="0 0 20 20"><path d="M20,15a3,3,0,0,1-3,3H14a1,1,0,0,1,0-2h3a1,1,0,0,0,1-1V5a1,1,0,0,0-1-1H14a1,1,0,0,1,0-2h3a3,3,0,0,1,3,3Zm-6.293-4.293-5,5a1,1,0,0,1-1.414-1.414L10.586,11H1A1,1,0,0,1,1,9h9.586L7.293,5.707A1,1,0,1,1,8.708,4.293h0l5,5a1,1,0,0,1,0,1.414h0Z" fill="#fff"/></svg></div>';
+    document.getElementById('logout').addEventListener('click', logout);
 }
 
 const show404 = () => {
