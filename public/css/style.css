@@ -115,24 +115,36 @@ button:hover {
     text-align: right;
 }
 
-#logout {
+.menu {
     position: fixed;
     top: 0;
     right: 0;
-    background: #37393b;
-    border-radius: 0 0 0 1rem;
+}
+
+#save, #logout {
     cursor: pointer;
+    background: #37393b;
     transition: background .4s ease;
+}
+
+#logout {
+    border-radius: 0 0 0 1rem;
 }
 
 #logout:hover {
     background: #e64b4b;
 }
 
-#logout svg {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 1rem;
+#save:hover {
+    background: #45a6cc;
+}
+
+#save svg, #logout svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 1rem;
+    margin: 0;
+    fill: #fff;
 }
 
 @keyframes shake {
