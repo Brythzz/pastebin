@@ -113,6 +113,7 @@ button:hover {
     font-size: 0.8125rem;
     font-family: monospace;
     text-align: right;
+    user-select: none;
 }
 
 .menu {
