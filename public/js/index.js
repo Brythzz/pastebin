@@ -40,7 +40,7 @@ const saveHaste = async () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content })
     });
-    
+
     if (res.status === 200) {
         const haste = await res.json();
         history.pushState(null, null, '/' + haste.id);
