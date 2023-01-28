@@ -1,65 +1,76 @@
 .hljs {
     display: block;
-    color: #b9bbbe;
+    color: #cbced0;
     text-size-adjust: none
 }
-
-.hljs-addition,
-.hljs-keyword,
-.hljs-selector-tag {
-    color: #859900
+.hljs {
+    color: #cbced0;
+    background: #1c1e26
 }
 
-.hljs-doctag,
-.hljs-literal,
-.hljs-meta .hljs-meta-string,
-.hljs-number,
-.hljs-regexp,
-.hljs-string {
-    color: #2aa198
+.hljs ::selection,.hljs::selection {
+    background-color: #2e303e;
+    color: #cbced0
 }
 
-.hljs-name,
-.hljs-section,
-.hljs-selector-class,
-.hljs-selector-id,
-.hljs-title {
-    color: #268bd2
+.hljs-comment {
+    color: #6f6f70
 }
 
-.hljs-attr,
-.hljs-attribute,
-.hljs-class .hljs-title,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable {
-    color: #b58900
+.hljs-tag {
+    color: #9da0a2
 }
 
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-meta .hljs-keyword,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-subst,
-.hljs-symbol {
-    color: #cb4b16
+.hljs-operator,.hljs-punctuation,.hljs-subst {
+    color: #cbced0
 }
 
-.hljs-built_in,
-.hljs-deletion {
-    color: #dc322f
+.hljs-operator {
+    opacity: .7
 }
 
-.hljs-formula {
-    background: #073642
+.hljs-bullet,.hljs-deletion,.hljs-name,.hljs-selector-tag,.hljs-template-variable,.hljs-variable {
+    color: #e93c58
 }
 
-.hljs-emphasis {
-    font-style: italic
+.hljs-attr,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol,.hljs-variable.constant_ {
+    color: #e58d7d
+}
+
+.hljs-class .hljs-title,.hljs-title,.hljs-title.class_ {
+    color: #efb993
 }
 
 .hljs-strong {
+    font-weight: 700;
+    color: #efb993
+}
+
+.hljs-addition,.hljs-code,.hljs-string,.hljs-title.class_.inherited__ {
+    color: #efaf8e
+}
+
+.hljs-built_in,.hljs-doctag,.hljs-keyword.hljs-atrule,.hljs-quote,.hljs-regexp {
+    color: #24a8b4
+}
+
+.hljs-attribute,.hljs-function .hljs-title,.hljs-section,.hljs-title.function_,.ruby .hljs-property {
+    color: #df5273
+}
+
+.diff .hljs-meta,.hljs-keyword,.hljs-template-tag,.hljs-type {
+    color: #b072d1
+}
+
+.hljs-emphasis {
+    color: #b072d1;
+    font-style: italic
+}
+
+.hljs-meta,.hljs-meta .hljs-keyword,.hljs-meta .hljs-string {
+    color: #e4a382
+}
+
+.hljs-meta .hljs-keyword,.hljs-meta-keyword {
     font-weight: 700
 }

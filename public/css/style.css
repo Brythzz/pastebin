@@ -4,7 +4,7 @@ html {
 
 body {
     width: 100%;
-    background: #202225;
+    background: #1c1e26;
     padding: 1.25rem 3.125rem;
     margin: 0;
     line-height: 15px;
@@ -69,11 +69,10 @@ input, button {
 input {
     margin-bottom: 0.75rem;
     border: 0;
-    background: #282828;
+    background: rgb(255 255 255 / 10%);
     color: #b4b5b6;
     padding: 0.6rem 1.25rem;
     outline: none;
-    border: 1px solid #3b3b3b;
 }
 
 input:focus, button:focus {
@@ -87,17 +86,17 @@ button {
     border: 0;
     border-radius: 8px;
     margin: 0.5rem 0;
-    background: #333;
+    background: rgb(255 255 255 / 8%);
     cursor: pointer;
     height: 2.5rem;
     width: 100%;
-    color: #afafaf;
+    color: #bcbcbc;
     font-weight: 600;
     transition: background .2s ease;
 }
 
 button:hover {
-    background: #3a3a3a;
+    background: rgb(255 255 255 / 10%)
 }
 
 .shake {
@@ -124,7 +123,7 @@ button:hover {
 
 #save, #logout {
     cursor: pointer;
-    background: #37393b;
+    background: #373f47;
     transition: background .4s ease;
 }
 
