@@ -1,11 +1,14 @@
 html {
     display: flex;
+    width: fit-content;
+    min-width: 100%;
 }
 
 body {
     background: #1c1e26;
     padding: 1.25rem 3.125rem;
     margin: 0;
+    flex-grow: 1;
     line-height: 15px;
     font-family: monospace;
 }
